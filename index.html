@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id ="profile-card">
+        <h1>Profile Card</h1>
+        <img id="face" src="images/face-happy.svg" alt="Emoji's displaying emotions">
+        <button id="nextPicBtn">Next Picture</button>
+
+        <h3>Name: Wandile Ndlovu</h3>
+        <h3 id="moodDisplay"></h3>
+        <button id="moodButton">Change Mood</button>
+
+        <!-- tabs -->
+        <div class="tabs">
+          <button class="tab-button" onclick="showTab('about')">About Me</button>
+          <button class="tab-button" onclick="showTab('skills')">Skills</button>
+          <button class="tab-button" onclick="showTab('hobbies')">Hobbies</button>
+        </div>
+
+        <div class="tabs-content">
+            <div id="about" class="tab-pane active">
+              <p> Product of the "Road to 1million devs" initiative</p>
+            </div>
+            <div id="skills" class="tab-pane">
+              <p>Skills: JavaScript, HTML, CSS, Python</p>
+            </div>
+            <div id="hobbies" class="tab-pane">
+              <p>Hobbies: Coding, Gaming, Reading</p>
+            </div>
+        </div>
+    
+        <!-- input field -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"> <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br><br>
+
+            <button type="button">Send Message</button>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
